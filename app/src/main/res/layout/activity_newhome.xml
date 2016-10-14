@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_newHome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_actionbar"
+        android:layout_weight="0"
+        layout="@layout/activity_home_include_actionbar"></include>
+
+    <include
+        layout="@layout/activity_home_include_speedball"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"></include>
+
+    <include
+        layout="@layout/activity_home_include_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"></include>
+</LinearLayout>

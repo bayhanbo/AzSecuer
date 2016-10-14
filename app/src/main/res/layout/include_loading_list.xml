@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- invisible: 隐藏，位置还在 -->
+    <!-- gone: 隐藏，位置不在 -->
+    <ListView
+        android:id="@+id/lv_loading_listview"
+        android:dividerHeight="0.5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        />
+    <!--
+    indeterminate 是否是确定模式
+    确定模式 是否呈现当前的工作状态 一般水平
+    模糊模式 圆形的模式系统就是模糊的 只告诉你我在工作 但是不会告诉你我具体的工作状态进度
+    设置ProgressBar是否使用模糊模式，该属性一般在进度条为横向情况（Widget.ProgressBar.Horizontal）下才设置，因为圆形进度条本身就是模糊模式。
+    indeterminateDrawable 不确定模式的drawable 可以是xml动画
+    indeterminateDuration 持续时间
+    indeterminateBehavior 不确定模式进度完成以后的模式 repeat 重复 cycle 回到0
+    indeterminateOnly true 是否一致是当前的模式进行 false 不是
+    -->
+    <ProgressBar
+        android:id="@+id/pb_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleLargeInverse"
+        android:layout_gravity="center"
+        android:indeterminateDrawable="@drawable/loading_rotate"
+        android:indeterminateDuration="500"
+        android:indeterminateBehavior="repeat"
+        android:indeterminateOnly="true"
+        android:visibility="visible"
+        />
+</FrameLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="azsecuer.androidy.com.azsecuer.activity.softwaerManager.SoftwareAllActivity">
+    <include layout="@layout/activity_home_include_actionbar"
+        android:id="@+id/include_bar"/>
+    <ListView
+        android:id="@+id/lv_software_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:dividerHeight="1dp"
+        android:visibility="invisible"></ListView>
+    <ProgressBar
+        android:id="@+id/pb_loading_soft_all"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminateDrawable="@drawable/loading_rotate"
+        android:indeterminateDuration="400"
+        android:indeterminateBehavior="repeat"
+        android:indeterminateOnly="true"
+        android:layout_centerInParent="true"
+        android:visibility="visible"/>
+</RelativeLayout>

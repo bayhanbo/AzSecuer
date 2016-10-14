@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="15dp">
+    <azsecuer.androidy.com.azsecuer.activity.softwaerManager.PiecharView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/software_manager_icon" />
+    <TextView
+        android:id="@+id/tv_room"
+        android:text="手机空间分配情况："
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@+id/software_manager_icon" />
+    <TextView
+        android:id="@+id/tv_room_in_icon"
+        android:text="内置空间:"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/notification_information_progress_green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:layout_toRightOf="@+id/software_manager_icon" />
+    <TextView
+        android:id="@+id/tv_room_out_icon"
+        android:text="外置空间:"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/notification_information_progress_red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:layout_toRightOf="@+id/software_manager_icon" />
+    <TextView
+        android:id="@+id/tv_room_in"
+        android:text="0.0GB"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:textColor="@color/progress_bg"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/tv_room_in_icon" />
+    <TextView
+        android:id="@+id/tv_room_out"
+        android:text="0.0GB"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0000"
+        android:layout_marginTop="130dp"
+        android:layout_toRightOf="@+id/tv_room_in_icon" />
+</RelativeLayout>

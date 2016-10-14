@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">AzSecuer</string>
+    <string name="app_name1">手机管家</string>
+    <string name="app_name2">手机加速</string>
+    <string name="app_name3">8</string>
+    <string name="app_name4">%</string>
+    <string name="app_name5">手机加速</string>
+    <string name="app_name6">软件管理</string>
+    <string name="app_name7">手机检测</string>
+    <string name="app_name8">通讯大全</string>
+    <string name="app_name9">文件管理</string>
+    <string name="app_name10">垃圾清理</string>
+    <string name="tel_type_text">一条龙电话服务平台</string>
+    <string name="junk_clear_text">垃圾文件清理服务平台</string>
+    <string name="junk_clear_bt">删除选中文件</string>
+    <string name="mobile_speedup_system_show">显示系统进程</string>
+    <string name="mobile_speedup_system_hide">隐藏系统进程</string>
+    <string name="mobile_speedup_clear">一键清理</string>
+    <string name="mobile_speedup_ram">内存信息:0.88GB/8GB</string>
+    <string name="software_manager_room">0.0GB/0.0GB</string>
+    <string name="software_manager_room_in">内置空间(已使用/全部)</string>
+    <string name="software_manager_room_out">外置空间(已使用/全部)</string>
+    <string name="software_manager_all">所有软件</string>
+    <string name="software_manager_system">系统软件</string>
+    <string name="software_manager_user">客户软件</string>
+</resources>

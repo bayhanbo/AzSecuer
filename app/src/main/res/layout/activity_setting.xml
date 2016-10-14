@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_setting"
+    android:orientation="vertical">
+    <include layout="@layout/activity_home_include_actionbar"></include>
+    <RelativeLayout
+        android:background="@drawable/home_entry_item_normal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_action_bar">
+        <TextView
+            style="@style/ListItemDef"
+            android:text="@string/tv_open_text"
+            />
+        <ToggleButton
+            android:id="@+id/tbtn_setting_autostart"
+            style="@style/tb_setting_style"
+            android:checked="false" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="@drawable/home_entry_item_normal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_action_bar">
+        <TextView
+            style="@style/ListItemDef"
+            android:text="@string/tv_notifyaction"
+            />
+        <ToggleButton
+            android:id="@+id/tbtn_setting_notifyaction"
+            style="@style/tb_setting_style"
+            android:checked="false" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_setting_about"
+        style="@style/ListItemDef2"
+        android:text="@string/tv_aboutus_text"/>
+    <TextView
+        android:id="@+id/tv_setting_help"
+        style="@style/ListItemDef2"
+        android:text="@string/tv_help_text"/>
+</LinearLayout>

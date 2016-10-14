@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/activity_home_include_actionbar"></include>
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_text"
+        android:background="@color/bottle_green"
+        android:text="@string/tel_type_text"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        />
+    <ListView
+        android:id="@+id/lv_tel_type"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+</LinearLayout>

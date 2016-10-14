@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.JunkClearActivity"
+    android:weightSum="1">
+    <include layout="@layout/activity_home_include_actionbar"></include>
+    <TextView
+        android:id="@+id/tv_clear_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_text"
+        android:background="@color/bottle_green"
+        android:text="@string/junk_clear_text"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        />
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        layout="@layout/include_loading_list">
+    </include>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        layout="@layout/junk_clear_checked"/>
+</LinearLayout>

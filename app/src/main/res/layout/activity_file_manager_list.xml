@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="azsecuer.androidy.com.azsecuer.activity.fileManager.FileManagerListActivity">
+    <include layout="@layout/activity_home_include_actionbar"/>
+    <LinearLayout
+        android:id="@+id/layout_callboard"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/actionbar"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:text="文件数量：" />
+        <TextView
+            android:id="@+id/tv_filebrowse_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00000"
+            android:textSize="22sp"
+            android:textColor="#ec1a1a"
+            android:textStyle="bold|italic" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:text=" 占用空间：" />
+        <TextView
+            android:id="@+id/tv_filebrowse_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00mb"
+            android:textSize="22sp"
+            android:textColor="#ec1a1a"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/lv_file_context"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        />
+    <include
+        android:id="@+id/file_include_checked_button"
+        layout="@layout/speedup_checked_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        ></include>
+</LinearLayout>

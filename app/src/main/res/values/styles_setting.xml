@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tv_open_text">开机启动</string>
+    <string name="tv_notifyaction">通知图标</string>
+    <string name="tv_aboutus_text">关于我们</string>
+    <string name="tv_help_text">帮助说明</string>
+    <!-- 列表视图Item项目默认风格,如：ListView内每个选项等 -->
+    <style name="ListItemDef">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/height_action_bar</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">@dimen/list_item_text_padding</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/list_item_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!-- 列表视图Item项目默认风格 -->
+    <style name="ListItemDef2" parent="@style/ListItemDef">
+        <item name="android:padding">10dp</item>
+        <item name="android:drawableRight">@drawable/ic_arrows_right</item>
+    </style>
+    <style name="ListItemDef1">
+        <!--<item name="android:layout_alignParentLeft">true</item>-->
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/list_item_text_size</item>
+        <item name="android:padding">@dimen/list_item_text_padding</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/height_action_bar</item>
+    </style>
+    <!-- ToggleButton 属性 -->
+    <style name="tb_setting_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:background">@drawable/check_tbtn</item>
+        <item name="android:textOff"></item>
+        <item name="android:textOn"></item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_tel_name"
+        android:layout_alignParentLeft="true"
+        style="@style/ListItemDef1"
+        />
+    <TextView
+        android:id="@+id/tv_tel_number"
+        android:layout_alignParentRight="true"
+        style="@style/ListItemDef1"
+        />
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_action_bar">
+    <!--<CheckBox-->
+        <!--android:id="@+id/cb_junk_clear_checkedAll"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:onClick="onClick"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--/>-->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_action_bar"
+        android:text="@string/junk_clear_bt"
+        android:textColor="@color/white"
+        android:background="@color/bottle_green"
+        android:id="@+id/bt_clear_button"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:onClick="onClick"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>
